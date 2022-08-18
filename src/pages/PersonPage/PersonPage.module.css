@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  border-left: 4px solid blue;
+  padding: 2rem;
+}
+
+.person__name {
+  background: blue;
+  color: white;
+  padding: 1rem;
+}
+
+.photo__container {
+  width: 100%;
+  max-width: 250px;
+  max-height: 350px;
+    margin-right: 2rem;
+    position: relative;
+}
+
+.person__photo{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.info__container {
+width: 100%;
+max-width: 250px;
+max-height: 350px;
+margin-right: 2rem;
+background: rgba(0,0,0,0.4);
+padding: 1rem;
+}
+
+.info__title {
+  color: blue;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+  text-decoration: underline;
+  padding-bottom: 0.5rem;
+
+}
+.info__text {
+    margin-bottom: 0.8rem;
+}
+.icon {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 40px;
+  height: 40px;
+  display: block;
+  cursor: pointer;
+  object-fit:cover;
+  object-position: center center;
+  filter: drop-shadow(0px 0px 2px black);
+
+}
+
+@media screen and (max-width: 700px) {
+  .info__container {
+    width: 100%;
+    margin: 0;
+    margin-top: 1rem;
+    max-width: unset;
+  }
+}

@@ -1,0 +1,35 @@
+.container {
+  margin: var(--spacing-medium) 0;
+  padding: 0;
+  column-count: 3;
+  /* display: flex; 
+  flex-wrap: wrap;
+  */
+} 
+
+.list__item {
+margin: 1rem;
+
+}
+.link {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.list__img {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: var(--border-radius-small);
+  margin-right: 1rem;
+}
+
+.list__name {}
+
+@media screen and (max-width: 850px) {
+  .container{
+    column-count: 2;
+  }
+}
